@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         brand.setVisibility(View.VISIBLE);
                         logoText.setAnimation(loaderTextAnimation);
                     }
-                },2000);
+                },1000);
             }
         },900);
 

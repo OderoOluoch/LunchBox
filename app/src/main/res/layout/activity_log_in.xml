@@ -28,7 +28,7 @@ tools:context=".LogInActivity">
     android:layout_gravity="center"
     />
 <EditText
-    android:id="@+id/nameInputLoginView"
+    android:id="@+id/emailInputLoginView"
     android:layout_width="250dp"
     android:layout_height="50dp"
     android:hint="Enter Email"
@@ -59,7 +59,7 @@ tools:context=".LogInActivity">
     android:layout_width="250dp"
     android:layout_height="56dp"
     android:text="LogIn"
-    android:id="@+id/goToSeeMusicFromLogIn"
+    android:id="@+id/loginButton"
     android:background="@drawable/button"
     android:textColor="#fff"
     android:layout_gravity="center"
