@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "109903929364",
+    "project_id": "lunchbox-609a7",
+    "storage_bucket": "lunchbox-609a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109903929364:android:6f6bf9ff863ecef9b00701",
+        "android_client_info": {
+          "package_name": "com.odero.lunchbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109903929364-os87o64s298ibdg1qoib7vefbn0cl4t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUdb4eXiiJcfTYi8sl6faOmRXrYCLkG94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109903929364-os87o64s298ibdg1qoib7vefbn0cl4t4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
