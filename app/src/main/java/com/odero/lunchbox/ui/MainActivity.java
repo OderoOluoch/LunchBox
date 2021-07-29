@@ -1,4 +1,4 @@
-package com.odero.lunchbox;
+package com.odero.lunchbox.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.odero.lunchbox.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
                 FirebaseUser user = mAuth.getCurrentUser();
                 if(user == null){
-                    startActivity(new Intent(MainActivity.this,LogInActivity.class));
+                    startActivity(new Intent(MainActivity.this, LogInActivity.class));
                 }else {
-                    startActivity(new Intent(MainActivity.this,HomeActivity.class));
+                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
                 }
 
 
