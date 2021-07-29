@@ -11,8 +11,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
 
+    FirebaseAuth mAuth;
     TextView logoText,brand;
     RelativeLayout loaderLayout;
     Animation loaderTextAnimation, layoutAnimation;
@@ -21,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mAuth = FirebaseAuth.getInstance();
         loaderTextAnimation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.fall_down);
         layoutAnimation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.bottom_to_top);
         logoText = findViewById(R.id.logoText);
@@ -41,14 +45,22 @@ public class MainActivity extends AppCompatActivity {
                         brand.setVisibility(View.VISIBLE);
                         logoText.setAnimation(loaderTextAnimation);
                     }
-                },2000);
+                },1000);
             }
         },900);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this,LogInActivity.class));
+
+                FirebaseUser user = mAuth.getCurrentUser();
+                if(user == null){
+                    startActivity(new Intent(MainActivity.this,LogInActivity.class));
+                }else {
+                    startActivity(new Intent(MainActivity.this,HomeActivity.class));
+                }
+
+
             }
         },8000);
 
