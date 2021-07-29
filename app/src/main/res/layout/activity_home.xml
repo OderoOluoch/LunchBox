@@ -6,7 +6,7 @@
     android:focusableInTouchMode="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.IntroActivity">
+    tools:context=".ui.HomeActivity">
 
 
     <ScrollView
@@ -60,7 +60,7 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="32dp"
                     android:text="Hi Odero"
-                    android:textColor="#ff3d00"
+                    android:textColor="#273746"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +120,7 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
-                    android:background="@drawable/light_orange_background"
+                    android:background="@drawable/color_background"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
@@ -160,7 +160,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/orange_button_backgroud"
+                        android:background="@drawable/button_backgroud"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@id/textView7"
                         app:layout_constraintStart_toEndOf="@id/imageView4"
@@ -351,10 +351,10 @@
             android:id="@+id/card_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ff5e00"
+            android:backgroundTint="#273746"
             android:elevation="3dp"
             android:src="@drawable/shopping_cart"
-            app:backgroundTint="#ff5e00"
+            app:backgroundTint="#273746"
             app:layout_anchor="@id/app_bar"
             app:maxImageSize="30dp"
             app:tint="#ffffff">
