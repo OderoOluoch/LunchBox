@@ -18,9 +18,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
         setContentView(R.layout.activity_home);
-//        logout.setOnClickListener(view ->{
-//            mAuth.signOut();
-//            startActivity(new Intent(HomeActivity.this, LogInActivity.class));
-//        });
+
     }
 }
