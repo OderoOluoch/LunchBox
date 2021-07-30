@@ -1,4 +1,4 @@
-package com.odero.lunchbox;
+package com.odero.lunchbox.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.odero.lunchbox.R;
 
 public class LogInActivity extends AppCompatActivity {
     EditText passwordView,emailView;
@@ -38,7 +39,7 @@ public class LogInActivity extends AppCompatActivity {
             loginUser();
         });
         registerInstead.setOnClickListener(view ->{
-            startActivity(new Intent(LogInActivity.this,SignUpActivity.class));
+            startActivity(new Intent(LogInActivity.this, SignUpActivity.class));
         });
     }
     private void loginUser(){
@@ -57,7 +58,7 @@ public class LogInActivity extends AppCompatActivity {
                 public void onComplete(@NonNull  Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         Toast.makeText(LogInActivity.this,"Authentication successful",Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(LogInActivity.this,HomeActivity.class));
+                        startActivity(new Intent(LogInActivity.this, HomeActivity.class));
                     }else {
                         Toast.makeText(LogInActivity.this,"Authentication error: " + task.getException().getMessage(),Toast.LENGTH_LONG).show();
                     }

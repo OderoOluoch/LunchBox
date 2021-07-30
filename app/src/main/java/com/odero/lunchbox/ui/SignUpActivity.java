@@ -1,4 +1,4 @@
-package com.odero.lunchbox;
+package com.odero.lunchbox.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.odero.lunchbox.R;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -41,7 +42,7 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
         loginInstead.setOnClickListener(view ->{
-            startActivity(new Intent(SignUpActivity.this,LogInActivity.class));
+            startActivity(new Intent(SignUpActivity.this, LogInActivity.class));
         });
     }
 
